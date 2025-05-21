@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Her Health - Period Tracker & Self Care</title>
+  
+  <!-- Comic Neue font for bubbly fun vibe -->
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- Your CSS file -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>Her Health 💖</h1>
+  <p>Your cute, caring, and fun period tracker & self-care buddy!</p>
+
+  <!-- Animated girl container -->
+  <div class="animation-container">
+    <lottie-player
+      src="https://assets10.lottiefiles.com/packages/lf20_iwmd6pyr.json"
+      background="transparent"
+      speed="1"
+      style="width: 300px; height: 300px;"
+      loop
+      autoplay>
+    </lottie-player>
+  </div>
+
+  <!-- Period Tracker Input -->
+  <section>
+    <h2>Period Tracker</h2>
+    <label for="cycle-length">Cycle Length (days):</label><br />
+    <input type="number" id="cycle-length" min="20" max="45" placeholder="28" /><br />
+
+    <label for="last-period">Last Period Start Date:</label><br />
+    <input type="date" id="last-period" /><br />
+
+    <button id="calculate-btn">Calculate Next Period & Fertile Days</button>
+
+    <div id="result"></div>
+  </section>
+
+  <!-- Self-Care Journal -->
+  <section>
+    <h2>Self-Care Journal</h2>
+    <textarea id="journal" placeholder="Write your thoughts, feelings, or just rant here... 📝"></textarea><br />
+    <button id="save-journal">Save Journal Entry</button>
+    <div id="journal-feedback"></div>
+  </section>
+
+  <!-- Mental Health Rant Space -->
+  <section>
+    <h2>Mental Health Space 💬</h2>
+    <textarea id="rant" placeholder="Feel free to let it all out here!"></textarea><br />
+    <button id="save-rant">Save Rant</button>
+    <div id="rant-feedback"></div>
+  </section>
+
+  <!-- Lottie Player CDN -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <!-- Your JS file -->
+  <script src="script.js"></script>
+</body>
+</html>
